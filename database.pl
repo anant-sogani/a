@@ -557,7 +557,7 @@ sub printHeader {
     chomp (my $date = `date`);
 
     pn qq(--);
-    pn qq(-- Created on $date);
+    pn qq(-- AUTO-GENERATED on $date);
     pn qq(--);
 }
 
