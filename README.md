@@ -1,5 +1,5 @@
 # Introduction
-Script to generate a test database, that can be imported into mySQL server.
+Script to generate a test database that can be imported into mySQL server.
 
 # Usage
 `./database.pl > a.sql`
