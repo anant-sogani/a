@@ -1,5 +1,5 @@
 --
--- Created on Sat Aug 11 02:38:46 IST 2018
+-- AUTO-GENERATED on Sat Aug 11 02:48:49 IST 2018
 --
 
 -- ==================
@@ -67,11 +67,11 @@ CREATE TABLE `User` (
 LOCK TABLES `Address` WRITE;
 
 INSERT INTO `Address` VALUES
-    ('Sydney', 1000001),
+    ('London', 1000001),
     ('Mumbai', 1000002),
     ('Jaipur', 1000003),
-    ('Berlin', 1000004),
-    ('Moscow', 1000005)
+    ('Moscow', 1000004),
+    ('Berlin', 1000005)
 ;
 
 UNLOCK TABLES;
@@ -82,12 +82,12 @@ UNLOCK TABLES;
 LOCK TABLES `Organization` WRITE;
 
 INSERT INTO `Organization` VALUES
-    ('Lqgevgl Consulting Services', 'regular-org', 1000001),
-    ('Zlxgjbs Consulting Services', 'regular-org', 1000002),
-    ('Yilkgfh Consulting Services', 'regular-org', 1000003),
-    ('Hehqmen Consulting Services', 'regular-org', 1000004),
-    ('Yrvtpgd Consulting Services', 'regular-org', 1000005),
-    ('Rnsmbaz Consulting Services', 'regular-org', 1000006)
+    ('Znwnsrp Consulting Services', 'regular-org', 1000001),
+    ('Loasvno Consulting Services', 'regular-org', 1000002),
+    ('Rpvsqrj Consulting Services', 'regular-org', 1000003),
+    ('Cvvddwi Consulting Services', 'regular-org', 1000004),
+    ('Sxjusqt Consulting Services', 'regular-org', 1000005),
+    ('Klaaxbl Consulting Services', 'regular-org', 1000006)
 ;
 
 UNLOCK TABLES;
@@ -98,10 +98,10 @@ UNLOCK TABLES;
 LOCK TABLES `Phone` WRITE;
 
 INSERT INTO `Phone` VALUES
-    (329, 397367626, 1000001),
-    (324, 372965448, 1000002),
-    (612, 177785382, 1000003),
-    (763, 985379999, 1000004)
+    (675, 764857534, 1000001),
+    (995, 433248334, 1000002),
+    (819, 611131411, 1000003),
+    (749, 249843255, 1000004)
 ;
 
 UNLOCK TABLES;
@@ -112,9 +112,9 @@ UNLOCK TABLES;
 LOCK TABLES `User` WRITE;
 
 INSERT INTO `User` VALUES
-    ('kxmimuy@coldmail.com', 'Zgedhxn', 'Testman', 1000001),
-    ('xvthyof@coldmail.com', 'Aaphoog', 'Testman', 1000002),
-    ('nrhxxys@coldmail.com', 'Xjipqlp', 'Testman', 1000003)
+    ('jctkalj@coldmail.com', 'Ctnlkgn', 'Testman', 1000001),
+    ('lmaqoir@coldmail.com', 'Rlkmnyq', 'Testman', 1000002),
+    ('lwsjufz@coldmail.com', 'Bmpcoqz', 'Testman', 1000003)
 ;
 
 UNLOCK TABLES;
