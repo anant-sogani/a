@@ -1,0 +1,9 @@
+{
+   "Person" : {
+      "age" : "integer",
+      "firstName" : "string",
+      "lastName" : "string",
+      "salary" : "integer"
+   }
+}
+
