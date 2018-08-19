@@ -73,7 +73,7 @@ input JSON file is as follows:
 
 where a `<type>` is either **string** or **integer**.
 
-The format of the output JSON will be:
+The format of the output JSON should be:
 
     {
        "<attribute-1>" : "<random value of type-1>"
@@ -87,8 +87,17 @@ be assigned to an attribute, *as long as it is of the correct type*.
 You need not worry about them being insane, like a value of `645` for an
 attribute named `age`.
 
+**Indentation**: Your JSON output is *not* required to be properly
+indented, unlike our examples above. As long as it is parsable and valid,
+it is acceptable.
+
 ## Assignment
-You need to write a program in Python that does the above.
+You need to write a program in Python that does the above. We will test
+it as follows:
+
+`python your-program.py our-test-class.json`
+
+The output represent a valid object of the given class in JSON format.
 
 ## Tips
 - Use a module that can read a JSON file.
