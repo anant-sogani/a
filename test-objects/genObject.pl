@@ -1,9 +1,9 @@
 #!/usr/bin/perl
-#
+
 use strict;
 use warnings;
 use JSON;
- 
+
 #
 # Read the input JSON file into a string.
 #
