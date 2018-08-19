@@ -17,12 +17,13 @@ my $str;
 }
 
 #
-# Obtain the class definition(s) from the JSON string.
+# Covert the JSON string into a hash (aka dictionary).
 #
 my $classes = decode_json($str);
 
 #
-# Generate and print a random object per class.
+# For every defined class, generate and print a random object
+# in JSON.
 #
 for my $className (keys %{ $classes }) {
     my $definition = $classes->{$className};
