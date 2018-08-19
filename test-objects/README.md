@@ -6,7 +6,7 @@ You need to print a random object of that class in JSON.
 
 ## Example 1
 
-### Input
+### Input File
     {
        "Name" : {
           "firstName" : "string",
@@ -22,7 +22,7 @@ You need to print a random object of that class in JSON.
 
 ## Example 2
 
-### Input
+### Input File
     {
        "Employee" : {
           "age"    : "integer",
@@ -40,7 +40,7 @@ You need to print a random object of that class in JSON.
 
 ## Example 3
 
-### Input
+### Input File
     {
        "Person" : {
           "age"       : "integer",
