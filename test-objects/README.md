@@ -97,7 +97,8 @@ it as follows:
 
 `python your-program.py our-test-class.json`
 
-The output represent a valid object of the given class in JSON format.
+The output should represent a valid object of the given class in JSON
+format.
 
 ## Tips
 - Use a module that can read a JSON file.
