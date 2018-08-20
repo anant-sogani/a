@@ -1,0 +1,151 @@
+<html>
+
+<head> <title>News!</title>
+
+<!-- ---------------------------------------------------------- -->
+<!--                Style Definitions                           -->
+<!-- ---------------------------------------------------------- -->
+<style>
+
+  /*
+   * Those underlines do not look nice. Remove them.
+   */
+  a {
+    text-decoration: none;
+  }
+
+  /*
+   * Focus on the current list item.
+   */
+  li:hover {
+    background-color: #F0F0F0;
+  }
+
+  /*
+   * Neatly separated divisions.
+   */
+  div {
+    margin: 10px;
+  }
+
+</style>
+
+<!-- ---------------------------------------------------------- -->
+<!--                Javascript Code                             -->
+<!-- ---------------------------------------------------------- -->
+<script type="text/javascript">
+
+/*
+ * Uses News API to obtain the news headlines from The Times Of India.
+ * Prints them out.
+ *
+ * Reference: https://newsapi.org/s/the-times-of-india-api
+ */
+function getTimesOfIndiaHeadlines()
+{
+    /*
+     * Obtained this key from News API after successful manual registration
+     * on their website.
+     */
+    let myApiKey = "f93b0dccb3ba452f9b50ed9c61038bc6";
+
+    /*
+     * News API endpoint for The Times of India.
+     */
+    let baseUrl         = "https://newsapi.org/v2/top-headlines";
+    let newsApiEndpoint = baseUrl +
+      "?" + "sources=" + "the-times-of-india" +
+      "&" + "apiKey="  + myApiKey;
+
+    /*
+     * Form an HTTP request and send it.
+     */
+    let xmlHttpRequest = new XMLHttpRequest();
+
+    xmlHttpRequest.open("GET",            /* HTTP method. */
+        newsApiEndpoint,  /* URL.         */
+        false             /* Synchronous. */
+        );
+
+    xmlHttpRequest.send();
+
+    /*
+     * HTTP response received. Process it.
+     */
+    if (xmlHttpRequest.status == 200) {
+      /*
+       * Parse the successful response into a JSON object.
+       */
+      let response = JSON.parse(xmlHttpRequest.responseText);
+
+      /*
+       * Print it out.
+       */
+      printTimesOfIndiaHeadlines(response);
+
+    } else {
+      /*
+       * Error response.
+       */
+      alert("Sorry, unable to obtain news. Received HTTP status code " +
+          xmlHttpRequest.status + " : " + xmlHttpRequest.statusText);
+
+    }
+}
+
+/*
+ * Prints out the news headlines received from The Times Of India.
+ */
+function printTimesOfIndiaHeadlines(response)
+{
+    printInit();
+
+    for (let article of response['articles']) {
+      printOneTimesOfIndiaHeadline(article);
+    }
+}
+
+/*
+ * Initializes the print container.
+ */
+function printInit()
+{
+    document.getElementById("container").innerHTML = "";
+}
+
+/*
+ * Prints a single news headline received from The Times Of India.
+ */
+function printOneTimesOfIndiaHeadline(article)
+{
+    let title = article['title'];
+    let url   = article['url'];
+
+    /*
+     * Emit the headline as an anchored list item.
+     */
+    let a  = '<a href="' + url + '">' + title + '</a>';
+    let li = '<li>' + a + '</li>';
+
+    document.getElementById("container").innerHTML += li;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<button type="submit" onclick="getTimesOfIndiaHeadlines()">
+  Times Of India News Headlines
+</button>
+
+
+<!-- ---------------------------------------------------------- -->
+<!--                News Headlines                              -->
+<!-- ---------------------------------------------------------- -->
+<div id="container"></div>
+
+</body>
+
+</html>
