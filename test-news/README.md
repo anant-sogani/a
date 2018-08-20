@@ -10,7 +10,7 @@ For this assignment, focus on a particular newspaper, The Times of India.
 Explore and use the [News API](https://newsapi.org/s/the-times-of-india-api)
 to obtain the *Top Headlines* from The Times of India.
 
-You will have to register on the News API site to obtain an API key.
+You will have to manually register on the News API site to obtain an API key.
 
 ## Javascript
 The REST API invocation must be done in Javascript running on your HTML
