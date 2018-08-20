@@ -63,9 +63,9 @@ function getTimesOfIndiaHeadlines()
     let xmlHttpRequest = new XMLHttpRequest();
 
     xmlHttpRequest.open("GET",            /* HTTP method. */
-        newsApiEndpoint,  /* URL.         */
-        false             /* Synchronous. */
-        );
+                        newsApiEndpoint,  /* URL.         */
+                        false             /* Synchronous. */
+                       );
 
     xmlHttpRequest.send();
 
@@ -73,22 +73,22 @@ function getTimesOfIndiaHeadlines()
      * HTTP response received. Process it.
      */
     if (xmlHttpRequest.status == 200) {
-      /*
-       * Parse the successful response into a JSON object.
-       */
-      let response = JSON.parse(xmlHttpRequest.responseText);
+        /*
+         * Parse the successful response into a JSON object.
+         */
+        let response = JSON.parse(xmlHttpRequest.responseText);
 
-      /*
-       * Print it out.
-       */
-      printTimesOfIndiaHeadlines(response);
+        /*
+         * Print it out.
+         */
+        printTimesOfIndiaHeadlines(response);
 
     } else {
-      /*
-       * Error response.
-       */
-      alert("Sorry, unable to obtain news. Received HTTP status code " +
-          xmlHttpRequest.status + " : " + xmlHttpRequest.statusText);
+        /*
+         * Error response.
+         */
+        alert("Sorry, unable to obtain news. Received HTTP status code " +
+              xmlHttpRequest.status + " : " + xmlHttpRequest.statusText);
 
     }
 }
@@ -101,12 +101,12 @@ function printTimesOfIndiaHeadlines(response)
     printInit();
 
     for (let article of response['articles']) {
-      printOneTimesOfIndiaHeadline(article);
+        printOneTimesOfIndiaHeadline(article);
     }
 }
 
 /*
- * Initializes the print container.
+ * Initializes the headlines container.
  */
 function printInit()
 {
@@ -134,7 +134,6 @@ function printOneTimesOfIndiaHeadline(article)
 }
 
 </script>
-
 </head>
 
 <body>
@@ -150,5 +149,4 @@ function printOneTimesOfIndiaHeadline(article)
 <div id="container"></div>
 
 </body>
-
 </html>
