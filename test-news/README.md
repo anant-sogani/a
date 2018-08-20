@@ -7,11 +7,10 @@ and prints them out in a nice format.
 For this assignment, focus on a particular newspaper, The Times of India.
 
 ## REST API
-Explore [News API](https://newsapi.org/s/the-times-of-india-api) to learn
-how to obtain the **Top Headlines** from The Times of India.
+Explore and use the [News API](https://newsapi.org/s/the-times-of-india-api)
+to obtain the *Top Headlines* from The Times of India.
 
-You will have to register on the News API site in order to obtain an API
-key. This key will be required to authorize all your HTTP GET requests.
+You will have to register on the News API site to obtain an API key.
 
 ## Javascript
 The REST API invocation must be done in Javascript running on your HTML
@@ -23,13 +22,13 @@ A simple HTML submit button. Sample:
 [![Input](https://github.com/anant-sogani/a/blob/master/test-news/example/input.png)](https://github.com/anant-sogani/a/blob/master/test-news/example/input.png)
 
 ## Processing
-Clicking the button should trigger your Javascript code, that would then
+Clicking the button should trigger your Javascript code, which would then
 need to do the following:
-- Fetch The Times of India news headlines using News API.
+- Fetch The Times of India news headlines using [News API](https://newsapi.org/s/the-times-of-india-api).
 - Render the headlines on the HTML page.
 
 ## Output
-A list of clickable headlines. Sample:
+A list of **clickable** headlines. Sample:
 
 [![Output](https://github.com/anant-sogani/a/blob/master/test-news/example/output.png)](https://github.com/anant-sogani/a/blob/master/test-news/example/output.png)
 
