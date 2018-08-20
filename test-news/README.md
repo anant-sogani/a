@@ -18,7 +18,9 @@ The REST API invocation must be done in Javascript running on your HTML
 page. See this [link](https://stackoverflow.com/questions/36975619/how-to-call-a-rest-web-service-api-from-javascript) on how that can be done.
 
 ## Input
-A simple HTML submit button. See [sample](https://github.com/anant-sogani/a/blob/master/test-news/input.png).
+A simple HTML submit button. Sample:
+
+[![Input](https://github.com/anant-sogani/a/blob/master/test-news/input.png)](https://github.com/anant-sogani/a/blob/master/test-news/input.png)
 
 ## Processing
 Clicking the button should trigger your Javascript code, that would then
@@ -27,8 +29,9 @@ need to do the following:
 - Render the headlines on the HTML page.
 
 ## Output
-A neat list of headlines. See [sample](https://github.com/anant-sogani/a/blob/master/test-news/output.png).
+A list of headlines. Sample:
 
-## Note
-All *your* code runs on the client side (in the browser). **No** server side
-scripting is needed.
+[![Output](https://github.com/anant-sogani/a/blob/master/test-news/output.png)](https://github.com/anant-sogani/a/blob/master/test-news/output.png)
+
+## UI
+The above samples are just a suggestion. Feel free to create a better UI :)

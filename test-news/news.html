@@ -121,6 +121,9 @@ function printOneTimesOfIndiaHeadline(article)
     let title = article['title'];
     let url   = article['url'];
 
+    /* Remove newspaper name from the title. */
+    title = title.replace(" - Times of India", "");
+
     /*
      * Emit the headline as an anchored list item.
      */
