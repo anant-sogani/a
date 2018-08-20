@@ -29,9 +29,9 @@ need to do the following:
 - Render the headlines on the HTML page.
 
 ## Output
-A list of headlines. Sample:
+A list of clickable headlines. Sample:
 
 [![Output](https://github.com/anant-sogani/a/blob/master/test-news/example/output.png)](https://github.com/anant-sogani/a/blob/master/test-news/example/output.png)
 
 ## UI
-The above samples are just a suggestion. Feel free to create a better UI :)
+Feel free to design a better UI than the one shown above :)
