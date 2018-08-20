@@ -20,7 +20,7 @@ page. See this [link](https://stackoverflow.com/questions/36975619/how-to-call-a
 ## Input
 A simple HTML submit button. Sample:
 
-[![Input](https://github.com/anant-sogani/a/blob/master/test-news/input.png)](https://github.com/anant-sogani/a/blob/master/test-news/input.png)
+[![Input](https://github.com/anant-sogani/a/blob/master/test-news/example/input.png)](https://github.com/anant-sogani/a/blob/master/test-news/example/input.png)
 
 ## Processing
 Clicking the button should trigger your Javascript code, that would then
@@ -31,7 +31,7 @@ need to do the following:
 ## Output
 A list of headlines. Sample:
 
-[![Output](https://github.com/anant-sogani/a/blob/master/test-news/output.png)](https://github.com/anant-sogani/a/blob/master/test-news/output.png)
+[![Output](https://github.com/anant-sogani/a/blob/master/test-news/example/output.png)](https://github.com/anant-sogani/a/blob/master/test-news/example/output.png)
 
 ## UI
 The above samples are just a suggestion. Feel free to create a better UI :)
